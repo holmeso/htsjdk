@@ -5,6 +5,7 @@ import htsjdk.samtools.util.RuntimeIOException;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.PushbackInputStream;
 
 /**
  * Encode byte arrays by specifying a stop byte to separate the arrays.
