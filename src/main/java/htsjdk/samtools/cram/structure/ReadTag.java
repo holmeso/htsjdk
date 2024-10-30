@@ -319,8 +319,7 @@ public class ReadTag implements Comparable<ReadTag> {
             buffer.put((byte) (isUnsignedArray ? 'C' : 'c'));
             final byte[] array = (byte[]) value;
             buffer.putInt(array.length);
-            for (final byte element : array)
-                buffer.put(element);
+	    buffer.put(array);
 
         } else if (value instanceof short[]) {
             buffer.put((byte) (isUnsignedArray ? 'S' : 's'));
